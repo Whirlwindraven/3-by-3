@@ -1,1 +1,3 @@
 # 3-by-3
+
+I like JavaScript because I enjoy giving functionality to projects. JavaScript is the means by which I can give sites a kind of usefulness. 
