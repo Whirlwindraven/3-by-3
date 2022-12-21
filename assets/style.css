@@ -1,0 +1,15 @@
+div.columns {
+    margin-top: 20px;
+    padding: 0px 0px;
+  }
+div.container {
+  padding: 20px 100px;
+}
+  p {
+    font-family: calibri;
+    font-size: 20px;
+  }
+
+  .card-header-title {
+    font-size: 20px;
+  }
