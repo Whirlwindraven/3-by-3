@@ -1,5 +1,8 @@
 //set necessary variables
 //text from search bar
+var search = document.getElementById("search");
+var searchBtn = document.getElementById("searchBtn");
+
 
 //set call Wikipedia function
 function callWikipediaAPI() {
@@ -54,13 +57,13 @@ function callYouTubeAPI() {
     // var yInfoURL = "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key=AIzaSyCS2ZElMlvF3ZCgpzJ5hljHUNlDdcXlB94&part=snippet,statistics&fields=items(id,snippet,statistics)";
     // var ySearchURL = "https://www.googleapis.com/youtube/v3/search&part=snippet&type=video&videoEmbeddable=true"
 
-const APIKEY = "AIzaSyCS2ZElMlvF3ZCgpzJ5hljHUNlDdcXlB94"  //API key
-const youtubeAPI = 'https://www.googleapis.com/youtube/v3/search?key='; //search API for Youtube
+const APIKEY = "&key=AIzaSyCS2ZElMlvF3ZCgpzJ5hljHUNlDdcXlB94"  //API key
+const youtubeAPI = 'https://www.googleapis.com/youtube/v3/search?type=video&videoEmbeddable=true&q='; //search API for Youtube
 
-let searchYouTube = youtubeAPI + APIKEY
+let searchYouTube = youtubeAPI + search.value + APIKEY
 console.log(searchYouTube);
 
-        
+
 }
 
 
@@ -70,6 +73,10 @@ function searchTopic() {
 
 }
 
+searchBtn.addEventListener("click", function(){
+    callWikipediaAPI();
+    callYouTubeAPI();
+});
+
 //current API to text, put the function here
-callWikipediaAPI();
-callYouTubeAPI();
+//callWikipediaAPI();
