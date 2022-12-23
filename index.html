@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="/Learn-More/assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="card">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="/Learn-More/assets/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Learn More</title>
+  </head>
+  <body>
+    <!-- Title and search bar -->
+    <navbar class="flex flex-col items-center">
+      <h1 class="text-center text-3xl text-white w-screen bg-slate-500 p-4">Learn More!</h1>
+      <div class="flex flex-row mt-4">
+        <!-- search bar and button -->
+        <input type="text" id="search" class="text-center border-solid border-2 border-slate-400" placeholder="Input Search" required>
+        <button type="button" id="searchBtn" class="inline-block px-6 py-2.5 bg-blue-600 text-white">Search!<button/> 
+      </div>
+    </navbar>
+    <!-- Container for both searches -->
+    <main class="flex flex-row w-screen mt-4">
+      <!-- wikipedia section -->
+      <div id="wikipedia" class="w-1/2 bg-blue-500 m-4 p-4 text-white">
+        <h2 id="wikipediaTitle" class="text-center mb-2">Wikipedia Article Name</h2>
+        <p id="wikipediaText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <!-- youtube section -->
+      <div id="Youtube" class="w-1/2 bg-red-500 m-4 p-4 text-white">
+        <h2 class="text-center mb-2">Youtube Search Name</h2>
+        <article class="flex flex-column">
+          <div class="flex flex-row">
+            <h2 id="youtubeTitle">Youtube Video Title</h2>
+            <a class="w-96"><img id="youtubeImg" src="https://i.ytimg.com/vi/9nF0K2nJ7N8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdiNI12D6jVzFoQdbwuLK6D7RPyg" alt="Youtube Video Placeholder" class="truncate"></a>
+            <p id="youtubeText" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <!-- footer start -->
+    <footer>
+
+    </footer>
+  <script src="./assets/script.js"></script>
+  </body>
+</html>
+
+    <!-- <div class="card">
       <header class="card-header">
           <p class="card-header-title is-centered">
             <strong>Learn More!</strong>
@@ -21,30 +58,31 @@
         </button>
       </header>
 
-         <!--Search Bar with button-->
-         <input class="input" type="text" placeholder="Search Topic">
-         <button class="button">Search</button>
-  <p>test</p>
-  <div class='container has-text-centered'>
-    <div class='columns is-mobile is-left'>
-      <div class='column is-5'>
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <img src=
-"Wikipedia-logo-v2.svg.png"
-                   alt="Placeholder image">
-            </figure>
-          </div>
-  
-              <div class="media-content">
-                <p class="title is-5">
-                  Written Information !
-                </p>
-  
-                <p class="subtitle is-6">
-                  @geeksforgeeks
-                </p>
+    <!--Search Bar with button-->
+    <input class="input" type="text" placeholder="Search Topic">
+    <button class="button">Search</button>
+    <p>test</p>
+    <div class='container has-text-centered'>
+      <div class='columns is-mobile is-left'>
+        <div class='column is-5'>
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-2by1">
+                <img src=
+  "Wikipedia-logo-v2.svg.png"
+                    alt="Placeholder image">
+              </figure>
+            </div>
+    
+                <div class="media-content">
+                  <p class="title is-5">
+                    Written Information !
+                  </p>
+    
+                  <p class="subtitle is-6">
+                    @geeksforgeeks
+                  </p>
+                </div>
               </div>
     
               <div class='content'>
@@ -114,7 +152,6 @@
         </div>
       </div>
     </div>
-  </div>
-<script src="./assets/script.js"></script>
-</body>
+  <script src="./assets/script.js"></script>
+  </body>
 </html>
