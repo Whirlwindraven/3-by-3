@@ -50,23 +50,21 @@ function callWikipediaAPI() {
 
 //set call YouTube function
 function callYouTubeAPI() {
+    // var videoId = "";
+    // var yInfoURL = "https://www.googleapis.com/youtube/v3/videos?id=" + videoId + "&key=AIzaSyCS2ZElMlvF3ZCgpzJ5hljHUNlDdcXlB94&part=snippet,statistics&fields=items(id,snippet,statistics)";
+    // var ySearchURL = "https://www.googleapis.com/youtube/v3/search&part=snippet&type=video&videoEmbeddable=true"
 
+const APIKEY = "AIzaSyCS2ZElMlvF3ZCgpzJ5hljHUNlDdcXlB94"  //API key
+const youtubeAPI = 'https://www.googleapis.com/youtube/v3/search?key='; //search API for Youtube
 
+let searchYouTube = youtubeAPI + APIKEY
+console.log(searchYouTube);
 
-
-
-
-
-
-
-
-
-
-
-
-
+        
 }
 
+
+ 
 //set function for pressing search button
 function searchTopic() {
 
@@ -74,3 +72,4 @@ function searchTopic() {
 
 //current API to text, put the function here
 callWikipediaAPI();
+callYouTubeAPI();
