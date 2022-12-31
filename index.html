@@ -3,118 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/documentation.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/Learn-More/assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <header class="card-header">
-          <p class="card-header-title is-centered">
-            <strong>Learn More !</strong>
-          </p>
-          <button class="card-header-icon" aria-label="more options">
-            <span class="title">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </button>
-        </header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        </a>
 
-         <!--Search Bar with button-->
-         <input class="input" type="text" placeholder="Search Topic">
-         <button class="button">Search</button>
-  <p>test</p>
-  <div class='container has-text-centered'>
-    <div class='columns is-mobile is-left'>
-      <div class='column is-5'>
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <img src=
-"Wikipedia-logo-v2.svg.png"
-                   alt="Placeholder image">
-            </figure>
-          </div>
-  
-              <div class="media-content">
-                <p class="title is-5">
-                  Written Information !
-                </p>
-  
-                <p class="subtitle is-6">
-                  @geeksforgeeks
-                </p>
-              </div>
-            </div>
-  
-            <div class='content'>
-              <div class="media-content">
-                <p class='is-success'>
-                  GeeksforGeeks' is a computer
-                  science portal.it was created with
-                  a goal in mind to provide well 
-                  written, well thought and
-                  well explained solutions for 
-                  selected questions. The core
-                  team of five super geeks 
-                  constituting of technology 
-                  lovers and computer science 
-                  enthusiasts have been constantly
-                  working in this direction .
-                </p>
-              </div>
-            </div>
-          </div>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end ">
+          <a class="navbar-item" href="#top">Home</a>
+          <a class="navbar-item" href="#contact-us"> Contact Us</a>
+          <a class="navbar-item"> About us </a>
         </div>
       </div>
     </div>
-  </div>
-  <div class='container has-text-centered'>
-    <div class='columns is-mobile is-right'>
-      <div class='column is-5'>
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-2by1">
-              <img src=
-"Wikipedia-logo-v2.svg.png"
-                   alt="Placeholder image">
-            </figure>
-          </div>
-  
-              <div class="media-content">
-                <p class="title is-5">
-                  Written Information !
-                </p>
-  
-                <p class="subtitle is-6">
-                  @geeksforgeeks
-                </p>
-              </div>
-            </div>
-  
-            <div class='content'>
-              <div class="media-content">
-                <p class='is-success'>
-                  GeeksforGeeks' is a computer
-                  science portal.it was created with
-                  a goal in mind to provide well 
-                  written, well thought and
-                  well explained solutions for 
-                  selected questions. The core
-                  team of five super geeks 
-                  constituting of technology 
-                  lovers and computer science 
-                  enthusiasts have been constantly
-                  working in this direction .
-                </p>
-              </div>
-            </div>
-          </div>
+  </nav>
+  <section class="hero is-medium">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-2">Learning Made effective</h1>
+      <div id="hero-input-group" class="field has-addons has-addons-centered">
+        <div class="control">
+          <input class="input is-medium" type="text" placeholder="Search..." />
+        </div>
+        <div class="control">
+          <a class="button is-medium is-primary">
+            <i class="fal fa-search"></i>
+          </a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="container">
+    <div class="columns is-multiline is-centered cards-container" id="sectioncontainer">
+        <div class="column is-half card">
+            <article class="message is-black">
+                <div class="message-header">
+                    <p>Youtube Links</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                      <div class="board-item-content"><span>Video link</span></div>
+                  </div>
+                  <div class="board-item">
+                    <div class="board-item-content"><span>Video link</span></div>
+                </div>
+                <div class="board-item">
+                  <div class="board-item-content"><span>Video link</span></div>
+              </div>
+              <div class="board-item">
+                <div class="board-item-content"><span>Video link</span></div>
+            </div>
+                </div>
+            </article>
+        </div>
+        <div class="column is-half card">
+            <article class="message is-danger">
+                <div class="message-header">
+                    <p>Wikipedia articles</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    </div>
+    </section>
+    <div class="columns is-mobile is-centered">
+    <div class="column is-half is-narrow"></div>
+    </div>
+    <section class="section" id="contact-us">
+      <div class="container has-text-centered">
+          <h2 class="title">Contact us</h2>
+
+          <form>
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <p class="control has-icons-left">
+                              <input class="input" type="text" placeholder="Name">
+                              <span class="icon is-small is-left">
+                                  <i class="fas fa-user"></i>
+                              </span>
+                          </p>
+                      </div>
+                      <div class="field">
+                          <p class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="Email">
+                              <span class="icon is-small is-left">
+                                  <i class="fas fa-envelope"></i>
+                              </span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <div class="control">
+                              <textarea class="textarea" placeholder="Message us"></textarea>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <div class="control">
+                              <button class="button is-primary">
+                                  Send message
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </section>
 <script src="./assets/script.js"></script>
 </body>
 </html>
