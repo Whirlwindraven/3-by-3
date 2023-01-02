@@ -19,3 +19,11 @@ div.container {
   .card-header-title {
     font-size: 20px;
   }
+
+.articleName {
+  font-size: 30px;
+}
+
+.wArticleCard p {
+  margin-bottom: 20px;
+}
