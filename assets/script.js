@@ -12,6 +12,8 @@ var wikipediaSection = document.getElementById("wikipedia");
 var ytubeTitle = document.getElementById("youtubeTitle");
 var ytubeText = document.getElementById("youtubeText");
 var youtubeSection = document.getElementById("Youtube");
+//define search history section
+var searchHistorySection = document.getElementById("searchHistory");
 
 
 
@@ -137,9 +139,101 @@ function callYouTubeAPI() {
  
 //set function for pressing search button
 searchBtn.addEventListener("click", function(){
-    //don't search for anything unless there's something to search for
+    //don't do anything unless there's something to search for
     if (search.value) {
+        //add to search history if it isn't already there
+        if (!searchHistory.includes(search.value)) {
+            searchHistory.unshift(search.value);
+            if (searchHistory.length > 4) {
+                searchHistory.pop();
+            };
+        }
+        //print search history to page
+        printHistory();
+        //update searchHistory on local storage
+        localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+        //call APIs
         callWikipediaAPI();
         callYouTubeAPI();
     }
 });
+
+//function for printing search history
+function printHistory() {
+    //clear old history
+    searchHistorySection.innerHTML = "";
+    //print new history
+    //item 1
+    var history1 = document.createElement("button");
+    history1.setAttribute("id", "historyButton1");
+    history1.textContent = searchHistory[0];
+    searchHistorySection.appendChild(history1);
+    //item 2
+    if (searchHistory.length>1){
+        var history2 = document.createElement("button");
+        history2.setAttribute("id", "historyButton2");
+        history2.textContent = searchHistory[1];
+        searchHistorySection.appendChild(history2);
+        if (searchHistory.length>2){
+            //item 3
+            var history3 = document.createElement("button");
+            history3.setAttribute("id", "historyButton3");
+            history3.textContent = searchHistory[2];
+            searchHistorySection.appendChild(history3);
+            if (searchHistory.length>3){
+                //item 4
+                var history4 = document.createElement("button");
+                history4.setAttribute("id", "historyButton4");
+                history4.textContent = searchHistory[3];
+                searchHistorySection.appendChild(history4);
+            }
+        }
+    }
+    setHistoryButtonId();
+    setHistoryButtonListeners();
+}
+
+//get search history from local storage
+var searchHistory = [];
+if (localStorage.getItem("searchHistory") !== null) {
+    searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
+    printHistory();
+}
+
+//set varialbes for search history buttons, do it here, after loading search history, because otherwise the buttons don't exist yet so these variables are marked as null
+function setHistoryButtonId() {
+    window.historyButton1 = document.getElementById("historyButton1");
+    window.historyButton2 = document.getElementById("historyButton2");
+    window.historyButton3 = document.getElementById("historyButton3");
+    window.historyButton4 = document.getElementById("historyButton4");
+}
+
+//listen for history button push, needs to be in a function so it can be called again to "reset"  the event listeners to make the buttons work infinitely
+function setHistoryButtonListeners() {
+    historyButton1.addEventListener("click", function() {
+        search.value = historyButton1.textContent;
+        callWikipediaAPI();
+        callYouTubeAPI();
+    });
+    if (searchHistory.length>1) {
+        historyButton2.addEventListener("click", function() {
+            search.value = historyButton2.textContent;
+            callWikipediaAPI();
+            callYouTubeAPI();
+        });
+        if (searchHistory.length>2) {
+            historyButton3.addEventListener("click", function() {
+                search.value = historyButton3.textContent;
+                callWikipediaAPI();
+                callYouTubeAPI();
+            });
+            if (searchHistory.length>3) {
+                historyButton4.addEventListener("click", function() {
+                    search.value = historyButton4.textContent;
+                    callWikipediaAPI();
+                    callYouTubeAPI();
+                });
+            }
+        }
+    }
+}
