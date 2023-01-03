@@ -19,3 +19,20 @@ div.container {
   .card-header-title {
     font-size: 20px;
   }
+
+#historyButton1, #historyButton2, #historyButton3, #historyButton4 {
+  padding: 5px 10px 5px 10px;
+  color: white;
+  background-color: rgb(47, 113, 255);
+  border-radius: 5px;
+  margin: 10px 0 0 5px;
+ }
+
+.articleName {
+  font-size: 30px;
+}
+
+.wArticleCard p {
+  margin-bottom: 20px;
+}
+
