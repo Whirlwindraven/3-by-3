@@ -1,158 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- font awesome script for icons -->
-      <script src="https://kit.fontawesome.com/8730ed1532.js" crossorigin="anonymous"></script>
-      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="stylesheet" href="/Learn-More/assets/style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Learn More</title>
-  </head>
-  <body class="h-screen">
-    <!-- Title and search bar -->
-    <navbar class="flex flex-col items-center">
-      <h1 class="text-center text-3xl text-white w-screen bg-slate-500 p-4">Learn More!</h1>
-      <div class="flex flex-row mt-4">
-        <!-- search bar and button -->
-        <input type="text" id="search" class="text-center rounded-l-lg border-solid border-2 border-slate-400" placeholder="Input Search" required>
-        <button type="button" id="searchBtn" class="inline-block px-6 py-2.5 bg-blue-600 text-white  ease-in-out rounded-r-lg duration-300 hover:bg-blue-400">Search!<button/> 
-      </div>
-    </navbar>
-    <!-- Container for both searches -->
-    <main class="flex flex-row w-screen mt-4">
-      <!-- wikipedia section -->
-      <div id="wikipedia" class="w-1/2 bg-blue-500 m-4 p-4 text-white rounded-lg">
-        <h3 id="wikipediaTitle" class="text-center mb-2">Wikipedia Article Name</h3>
-        <p id="wikipediaText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <!-- youtube section -->
-      <div id="Youtube" class="w-1/2 bg-red-500 m-4 p-4 text-white rounded-lg">
-        <h3 class="text-center mb-2">Youtube Search Name</h3>
-        <article class="flex flex-column">
-          <div class="flex flex-row">
-            <h3 id="youtubeTitle">Youtube Video Title</h>
-            <a class=""><img id="youtubeImg" src="https://i.ytimg.com/vi/9nF0K2nJ7N8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBdiNI12D6jVzFoQdbwuLK6D7RPyg" alt="Youtube Video Placeholder" class="truncate"></a>
-            <p id="youtubeText" class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </article>
-      </div>
-    </main>
-    <!-- footer start -->
-    <footer class="w-screen fixed bottom-0 bg-slate-300 p-4">
-      <p class="text-center text-white">A <em>seabreeze</em> Creation</p>
-      <a href="https://github.com/Whirlwindraven/Learn-More" target="_blank"><i class="fa-brands fa-github fa-xl absolute" style="color: rgb(40, 40, 40); right: 2%; bottom: 50%"></i></a>
-    </footer>
-  <script src="./assets/script.js"></script>
-  </body>
-  <!-- <div class="card">
-      <header class="card-header">
-          <p class="card-header-title is-centered">
-            <strong>Learn More!</strong>
-          </p>
-          <button class="card-header-icon" aria-label="more options">
-          <span class="title">
-             <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/documentation.css" />
+  <script src="https://kit.fontawesome.com/2828f7885a.js"
+    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/Learn-More/assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        </a>
 
-    <!--Search Bar with button-->
-    <input class="input" type="text" placeholder="Search Topic">
-    <button class="button">Search</button>
-    <p>test</p>
-    <div class='container has-text-centered'>
-      <div class='columns is-mobile is-left'>
-        <div class='column is-5'>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-2by1">
-                <img src=
-  "Wikipedia-logo-v2.svg.png"
-                    alt="Placeholder image">
-              </figure>
-            </div>
-    
-                <div class="media-content">
-                  <p class="title is-5">
-                    Written Information !
-                  </p>
-    
-                  <p class="subtitle is-6">
-                    @geeksforgeeks
-                  </p>
-                </div>
-              </div>
-    
-              <div class='content'>
-                <div class="media-content">
-                  <p class='is-success'>
-                    GeeksforGeeks' is a computer
-                    science portal.it was created with
-                    a goal in mind to provide well 
-                    written, well thought and
-                    well explained solutions for 
-                    selected questions. The core
-                    team of five super geeks 
-                    constituting of technology 
-                    lovers and computer science 
-                    enthusiasts have been constantly
-                    working in this direction .
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end ">
+          <a class="navbar-item" href="#top">Home</a>
+          <a class="navbar-item" href="#contact-us"> Contact Us</a>
+          <a class="navbar-item" href="#about-us"> About us </a>
         </div>
       </div>
     </div>
-    <div class='container has-text-centered'>
-      <div class='columns is-mobile is-right'>
-        <div class='column is-5'>
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-2by1">
-                <img src=
-  "Wikipedia-logo-v2.svg.png"
-                    alt="Placeholder image">
-              </figure>
-            </div>
-    
-                <div class="media-content">
-                  <p class="title is-5">
-                    Written Information !
-                  </p>
-    
-                  <p class="subtitle is-6">
-                    @geeksforgeeks
-                  </p>
-                </div>
-              </div>
-    
-              <div class='content'>
-                <div class="media-content">
-                  <p class='is-success'>
-                    GeeksforGeeks' is a computer
-                    science portal.it was created with
-                    a goal in mind to provide well 
-                    written, well thought and
-                    well explained solutions for 
-                    selected questions. The core
-                    team of five super geeks 
-                    constituting of technology 
-                    lovers and computer science 
-                    enthusiasts have been constantly
-                    working in this direction .
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+  </nav>
+  <section class="hero is-medium">
+    <div class="hero-body has-text-centered">
+      <h1 class="title is-2">Learning Made effective</h1>
+      <div id="hero-input-group" class="field has-addons has-addons-centered">
+        <div class="control">
+          <input class="input is-medium" type="text" placeholder="Search..." />
+        </div>
+        <div class="control">
+          <a class="button is-medium is-primary">
+            <i class="fal fa-search"></i>
+          </a>
         </div>
       </div>
     </div>
-  <script src="./assets/script.js"></script>
-  </body>
+  </section>
+  <section class="container">
+    <div class="columns is-multiline is-centered cards-container" id="sectioncontainer">
+        <div class="column is-half card">
+            <article class="message is-black">
+                <div class="message-header">
+                    <p>Youtube Links</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Video link</span></div>
+                    </div>
+                    <div class="board-item">
+                      <div class="board-item-content"><span>Video link</span></div>
+                  </div>
+                  <div class="board-item">
+                    <div class="board-item-content"><span>Video link</span></div>
+                </div>
+                <div class="board-item">
+                  <div class="board-item-content"><span>Video link</span></div>
+              </div>
+              <div class="board-item">
+                <div class="board-item-content"><span>Video link</span></div>
+            </div>
+                </div>
+            </article>
+        </div>
+        <div class="column is-half card">
+            <article class="message is-danger">
+                <div class="message-header">
+                    <p>Wikipedia articles</p>
+                    <button class="delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                    <div class="board-item">
+                        <div class="board-item-content"><span>Article</span></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    </div>
+    </section>
+    <br><br>
+    <div class="main-content">>
+      <div class="section-light about-me" id="about-us">
+        <div class="container">
+          <div class="column is-2 about-me">
+            <h1 class="title has-text-centered section-title">About Us</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+              <p class="is-larger">
+                &emsp;&emsp;<strong
+                  >Learn-More is an educational platform that allows users to generate both videographic information as as well as written infromation to amplify the learning experince</strong
+                >
+              </p>
+              <br />
+              <p>
+                Learn-More was built by utlizing html, the CSS framework Bulma, and Javascript to add interactivity to the page. The aim of Learn-More was to accomodate different learning styles of different people. Further, we plan on impelementing new features in the upcoming version that would allow for more learning styles such audio learning etc...
+              </p>
+              <br />
+    <section class="section" id="contact-us">
+      <div class="container has-text-centered">
+          <h2 class="title">Contact us</h2>
+
+          <form>
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <p class="control has-icons-left">
+                              <input class="input" type="text" placeholder="Name">
+                              <span class="icon is-small is-left">
+                                  <i class="fas fa-user"></i>
+                              </span>
+                          </p>
+                      </div>
+                      <div class="field">
+                          <p class="control has-icons-left has-icons-right">
+                              <input class="input" type="email" placeholder="Email">
+                              <span class="icon is-small is-left">
+                                  <i class="fas fa-envelope"></i>
+                              </span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <div class="control">
+                              <textarea class="textarea" placeholder="Message us"></textarea>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="field is-horizontal">
+                  <div class="field-body">
+                      <div class="field">
+                          <div class="control">
+                              <button class="button is-primary">
+                                  Send message
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </section>
+<script src="./assets/script.js"></script>
+</body>
 </html>
+  
